@@ -1,0 +1,18 @@
+@host = http://localhost:5222
+
+# User
+GET {{host}}/User
+Accept: application/json
+###
+GET {{host}}/User/test1@domain.org
+Accept: application/json
+###
+POST {{host}}/User
+Content-Type: application/json
+
+{
+  "email": "example_email_tasdesasdt@domaintests.org",
+  "password": "passwd123!@#"
+}
+
+###
