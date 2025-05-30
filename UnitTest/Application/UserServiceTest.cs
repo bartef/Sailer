@@ -17,6 +17,7 @@ public class UserServiceTest
     private Mock<IUserDomainModelRepository> _domainModelMock;
     private IMapper _mapper;
     private UserService _sut;
+    private string _dummyEmail;
 
     [SetUp]
     public void SetUp()
@@ -25,14 +26,14 @@ public class UserServiceTest
         _domainModelMock = new Mock<IUserDomainModelRepository>();
         _mapper = AutoMapperConfig.Initialize();
         _sut = new UserService(_readModelMock.Object, _domainModelMock.Object, _mapper);
+        _dummyEmail = "email@domain.org";
     }
 
     [Test]
     public void should_get_user_by_email()
     {
-        var email = "email@domain.org";
         var expected = new UserDTO(
-            email,
+            _dummyEmail,
             "+11 123 123 123",
             "Jack",
             "Sparrow",
@@ -40,27 +41,34 @@ public class UserServiceTest
         );
 
         _readModelMock.Setup(
-                cfg => cfg.Find(email)
+                cfg => cfg.Find(_dummyEmail)
             ).ReturnsAsync(
-                new User(email, "password123", "salt123")
+                new User(_dummyEmail, "password123", "salt123")
                 .WithAge(42)
                 .WithName("Jack","Sparrow")
                 .WithPhone(11, 123123123)
             );
         
-        var actual = _sut.GetByEmail(email).Result;
+        var actual = _sut.GetByEmail(_dummyEmail).Result;
         
-        Assert.That(expected.Email, Is.EqualTo(actual.Email));
-        Assert.That(expected.Age, Is.EqualTo(actual.Age));
-        Assert.That(expected.Phone, Is.EqualTo(actual.Phone));
-        Assert.That(expected.Name, Is.EqualTo(actual.Name));
-        Assert.That(expected.Surname, Is.EqualTo(actual.Surname));
+        Assert.That(expected.Email, Is.EqualTo(actual.Result.Email));
+        Assert.That(expected.Age, Is.EqualTo(actual.Result.Age));
+        Assert.That(expected.Phone, Is.EqualTo(actual.Result.Phone));
+        Assert.That(expected.Name, Is.EqualTo(actual.Result.Name));
+        Assert.That(expected.Surname, Is.EqualTo(actual.Result.Surname));
     }
 
     [Test]
-    public void should_throw_exception_when_not_found_user_by_email()
+    public void should_get_task_with_exception_when_not_found_user_by_email()
     {
-        
+        _readModelMock.Setup(
+            cfg => cfg.Find(_dummyEmail)
+        ).ReturnsAsync(value: null!);
+
+        var actual = _sut.GetByEmail(_dummyEmail);
+            
+        Assert.That(actual.Result.Exception?.Message == $"One or more errors occurred. (User with email {_dummyEmail} not found.)");
+    
     }
 
     [Test]

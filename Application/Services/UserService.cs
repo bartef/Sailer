@@ -47,10 +47,13 @@ public class UserService(
         return userDTOs;
     }
 
-    public async Task<UserDTO> GetByEmail(string email)
+    public async Task<Task<UserDTO>> GetByEmail(string email)
     {
         var user = await readModelRepository.Find(email);
-        if (user == null) throw new System.Exception("$User with email {email} not found."); // TODO custom exception
-        return mapper.Map<User, UserDTO>(user);
+        if (user == null)
+        {
+            return Task.FromException<UserDTO>(new System.Exception($"User with email {email} not found."));
+        }
+        return Task.FromResult(mapper.Map<User, UserDTO>(user));
     }
 }
