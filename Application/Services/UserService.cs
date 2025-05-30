@@ -1,5 +1,6 @@
 using Application.Commands.Users;
 using Application.DTOs;
+using Application.Exceptions;
 using AutoMapper;
 using Core.DomainModels;
 using Core.Entities;
@@ -52,7 +53,7 @@ public class UserService(
         var user = await readModelRepository.Find(email);
         if (user == null)
         {
-            return Task.FromException<UserDTO>(new System.Exception($"User with email {email} not found."));
+            return Task.FromException<UserDTO>(UserServiceException.UserNotFound(email));
         }
         return Task.FromResult(mapper.Map<User, UserDTO>(user));
     }
