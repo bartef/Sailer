@@ -1,42 +1,16 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AMapper_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003Ff1246839d29201e3a70ea31cb97b0926bd0bc9ecf0fc17b763e7a8262b9e_003FMapper_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=04c18fdf_002D4624_002D48c4_002D8616_002Dfb9cb739dc5a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="should_get_user_by_email #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ATask_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F5967259aff81a295fc2280e640ed76b14d29f2687882c55d5297aabd281af70_003FTask_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bb1ddcfb_002D88f2_002D4ee5_002Da418_002Db6659a89483c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="should_get_user_by_email" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0da38d40_002D2eba_002D412b_002Dbf49_002D4bc1baaf6916/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="should_get_user_by_email #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4398d563_002Df325_002D4d2f_002Da5cf_002D3ed58cd4d604/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="should_get_user_by_email #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=499743a8_002D90ae_002D47a4_002Dbb26_002D272a8df57fe8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="should_get_user_by_email #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7508bd96_002D6e58_002D42f6_002D8716_002Dced991a6db9f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="should_get_user_by_email" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c3f63ab6_002D4d93_002D42e0_002Dbacd_002D249a70218302/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="should_get_user_by_email #8" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2f34217_002D1cde_002D4b07_002Db167_002D00b1a5abf3e3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="should_get_user_by_email #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f721c749_002Dfbc1_002D4422_002D9a46_002Dde16a184caa4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="should_get_user_by_email #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::35FE04CE-C67B-E97B-BE8F-97F0A07E36DC::net8.0::Test.Application.UserServiceTest.should_get_user_by_email&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>

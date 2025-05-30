@@ -23,7 +23,7 @@ public class UserServiceTest
     {
         _readModelMock = new Mock<IUserReadModelRepository>();
         _domainModelMock = new Mock<IUserDomainModelRepository>();
-        _mapper = AutoMapperConfig.Initialize(); 
+        _mapper = AutoMapperConfig.Initialize();
         _sut = new UserService(_readModelMock.Object, _domainModelMock.Object, _mapper);
     }
 
@@ -38,12 +38,16 @@ public class UserServiceTest
             "Sparrow",
             42
         );
-        var expectedUser = new User(
-            email, "password123", "salt123"
-        ).WithAge(42).WithName("Jack","Sparrow");
 
-        _readModelMock.Setup(cfg => cfg.Find(email))
-            .ReturnsAsync(expectedUser);
+        _readModelMock.Setup(
+                cfg => cfg.Find(email)
+            ).ReturnsAsync(
+                new User(email, "password123", "salt123")
+                .WithAge(42)
+                .WithName("Jack","Sparrow")
+                .WithPhone(11, 123123123)
+            );
+        
         var actual = _sut.GetByEmail(email).Result;
         
         Assert.That(expected.Email, Is.EqualTo(actual.Email));
